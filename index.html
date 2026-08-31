@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENACTERS - Ultimate Gaming Tournament Arena</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">MENACTERS</span>
+                <span class="logo-glow"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tournaments">Tournaments</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#matches">Matches</a></li>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-auth">
+                <button class="btn-login">LOGIN</button>
+                <button class="btn-signup">CREATE ACCOUNT</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://videos.pexels.com/video-files/3573382/3573382-sd_640_360_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge fade-in-down">
+                THE NEXT GENERATION OF ESPORTS
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="title-line-1 slide-in-left">ENTER THE</span>
+                <span class="title-line-2 slide-in-right">ARENA.</span>
+            </h1>
+            
+            <div class="animated-subtitle">
+                <span class="subtitle-word" style="animation-delay: 0.2s">PLAY.</span>
+                <span class="subtitle-word" style="animation-delay: 0.4s">COMPETE.</span>
+                <span class="subtitle-word" style="animation-delay: 0.6s">CONQUER.</span>
+            </div>
+            
+            <p class="hero-text fade-in-up">
+                Compete in tournaments. Build your legacy. Challenge the best players and prove that you belong at the top.
+            </p>
+            
+            <div class="hero-buttons fade-in-up">
+                <button class="btn btn-primary glow-button">JOIN A TOURNAMENT</button>
+                <button class="btn btn-secondary glow-button">EXPLORE ARENA</button>
+            </div>
+        </div>
+        
+        <!-- Floating HUD -->
+        <div class="floating-hud">
+            <div class="hud-item hud-1">
+                <div class="hud-value">2,847</div>
+                <div class="hud-label">LIVE TOURNAMENTS</div>
+            </div>
+            <div class="hud-item hud-2">
+                <div class="hud-value">547K</div>
+                <div class="hud-label">PLAYERS ONLINE</div>
+            </div>
+            <div class="hud-item hud-3">
+                <div class="hud-value">₹50L+</div>
+                <div class="hud-label">PRIZE POOL</div>
+            </div>
+            <div class="hud-item hud-4">
+                <div class="hud-value">12.3K</div>
+                <div class="hud-label">MATCHES TODAY</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Battles Section -->
+    <section id="tournaments" class="live-battles">
+        <div class="section-header">
+            <h2 class="section-title fade-up">LIVE BATTLES</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="tournaments-grid">
+            <div class="tournament-card card-glow">
+                <div class="tournament-image">
+                    <img src="https://images.unsplash.com/photo-1538481143235-405ba7209da0?w=500&h=300&fit=crop" alt="Valorant">
+                    <div class="live-indicator pulse">
+                        <span>● LIVE</span>
+                    </div>
+                </div>
+                <div class="tournament-info">
+                    <h3>Valorant Champions League</h3>
+                    <div class="tournament-meta">
+                        <span>👥 256 Players</span>
+                        <span>💰 ₹25L Prize</span>
+                    </div>
+                    <div class="countdown">Match in 02:45:30</div>
+                    <button class="btn btn-primary">JOIN NOW</button>
+                </div>
+            </div>
+            
+            <div class="tournament-card card-glow">
+                <div class="tournament-image">
+                    <img src="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=500&h=300&fit=crop" alt="CS2">
+                    <div class="live-indicator pulse">
+                        <span>● LIVE</span>
+                    </div>
+                </div>
+                <div class="tournament-info">
+                    <h3>Counter-Strike Global Elite</h3>
+                    <div class="tournament-meta">
+                        <span>👥 512 Players</span>
+                        <span>💰 ₹50L Prize</span>
+                    </div>
+                    <div class="countdown">Match in 01:20:15</div>
+                    <button class="btn btn-primary">JOIN NOW</button>
+                </div>
+            </div>
+            
+            <div class="tournament-card card-glow">
+                <div class="tournament-image">
+                    <img src="https://images.unsplash.com/photo-1542308503-80e2c6f6fc5a?w=500&h=300&fit=crop" alt="Fortnite">
+                    <div class="live-indicator pulse">
+                        <span>● LIVE</span>
+                    </div>
+                </div>
+                <div class="tournament-info">
+                    <h3>Fortnite Battle Royale</h3>
+                    <div class="tournament-meta">
+                        <span>👥 1024 Players</span>
+                        <span>💰 ₹75L Prize</span>
+                    </div>
+                    <div class="countdown">Match in 03:10:45</div>
+                    <button class="btn btn-primary">JOIN NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Watch the Battle Section -->
+    <section class="watch-battle">
+        <div class="section-header">
+            <h2 class="section-title fade-up">WATCH THE BATTLE</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="video-container fade-in-up">
+            <video class="battle-video" controls playsinline>
+                <source src="https://videos.pexels.com/video-files/8954605/8954605-sd_640_360_30fps.mp4" type="video/mp4">
+            </video>
+            <div class="play-overlay">
+                <div class="play-button">▶</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Tournaments -->
+    <section class="upcoming-tournaments">
+        <div class="section-header">
+            <h2 class="section-title fade-up">UPCOMING TOURNAMENTS</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="filters fade-in-up">
+            <button class="filter-btn active" data-filter="all">All Games</button>
+            <button class="filter-btn" data-filter="fps">FPS</button>
+            <button class="filter-btn" data-filter="br">Battle Royale</button>
+            <button class="filter-btn" data-filter="moba">MOBA</button>
+            <button class="filter-btn" data-filter="sports">Sports</button>
+        </div>
+        
+        <div class="upcoming-grid">
+            <div class="upcoming-card fade-up" data-category="fps">
+                <div class="upcoming-image">
+                    <img src="https://images.unsplash.com/photo-1538481143235-405ba7209da0?w=500&h=300&fit=crop" alt="Tournament">
+                </div>
+                <div class="upcoming-info">
+                    <span class="game-tag">VALORANT</span>
+                    <h3>Valorant World Series 2024</h3>
+                    <p class="date">📅 Sept 15, 2024 • 18:00 IST</p>
+                    <div class="upcoming-meta">
+                        <span>💰 ₹30L</span>
+                        <span>👥 128</span>
+                    </div>
+                    <button class="btn btn-secondary">Register</button>
+                </div>
+            </div>
+            
+            <div class="upcoming-card fade-up" data-category="fps">
+                <div class="upcoming-image">
+                    <img src="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=500&h=300&fit=crop" alt="Tournament">
+                </div>
+                <div class="upcoming-info">
+                    <span class="game-tag">CS2</span>
+                    <h3>CS2 International Championship</h3>
+                    <p class="date">📅 Oct 2, 2024 • 20:00 IST</p>
+                    <div class="upcoming-meta">
+                        <span>💰 ₹50L</span>
+                        <span>👥 256</span>
+                    </div>
+                    <button class="btn btn-secondary">Register</button>
+                </div>
+            </div>
+            
+            <div class="upcoming-card fade-up" data-category="br">
+                <div class="upcoming-image">
+                    <img src="https://images.unsplash.com/photo-1542308503-80e2c6f6fc5a?w=500&h=300&fit=crop" alt="Tournament">
+                </div>
+                <div class="upcoming-info">
+                    <span class="game-tag">FORTNITE</span>
+                    <h3>Fortnite Pro League 2024</h3>
+                    <p class="date">📅 Sept 28, 2024 • 19:00 IST</p>
+                    <div class="upcoming-meta">
+                        <span>💰 ₹75L</span>
+                        <span>👥 512</span>
+                    </div>
+                    <button class="btn btn-secondary">Register</button>
+                </div>
+            </div>
+            
+            <div class="upcoming-card fade-up" data-category="moba">
+                <div class="upcoming-image">
+                    <img src="https://images.unsplash.com/photo-1638614052176-c961b0acd7a7?w=500&h=300&fit=crop" alt="Tournament">
+                </div>
+                <div class="upcoming-info">
+                    <span class="game-tag">LOL</span>
+                    <h3>League of Legends World Championship</h3>
+                    <p class="date">📅 Oct 10, 2024 • 21:00 IST</p>
+                    <div class="upcoming-meta">
+                        <span>💰 ₹1Cr+</span>
+                        <span>👥 64</span>
+                    </div>
+                    <button class="btn btn-secondary">Register</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="leaderboard">
+        <div class="section-header">
+            <h2 class="section-title fade-up">THE ELITE</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="leaderboard-container fade-in-up">
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Country</th>
+                        <th>Wins</th>
+                        <th>Win Rate</th>
+                        <th>Earnings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="rank-1">
+                        <td class="rank">🥇</td>
+                        <td class="player-name">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=1" alt="Player">
+                            <span>ProGamer_Alpha</span>
+                        </td>
+                        <td>🇮🇳 India</td>
+                        <td>248</td>
+                        <td>87.5%</td>
+                        <td>₹45L</td>
+                    </tr>
+                    <tr class="rank-2">
+                        <td class="rank">🥈</td>
+                        <td class="player-name">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=2" alt="Player">
+                            <span>ShadowNinja</span>
+                        </td>
+                        <td>🇮🇳 India</td>
+                        <td>216</td>
+                        <td>85.2%</td>
+                        <td>₹38L</td>
+                    </tr>
+                    <tr class="rank-3">
+                        <td class="rank">🥉</td>
+                        <td class="player-name">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=3" alt="Player">
+                            <span>ThunderStrike</span>
+                        </td>
+                        <td>🇮🇳 India</td>
+                        <td>192</td>
+                        <td>82.1%</td>
+                        <td>₹32L</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">4</td>
+                        <td class="player-name">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=4" alt="Player">
+                            <span>PhantomForce</span>
+                        </td>
+                        <td>🇮🇳 India</td>
+                        <td>178</td>
+                        <td>79.8%</td>
+                        <td>₹28L</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">5</td>
+                        <td class="player-name">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=5" alt="Player">
+                            <span>VortexLord</span>
+                        </td>
+                        <td>🇮🇳 India</td>
+                        <td>165</td>
+                        <td>78.5%</td>
+                        <td>₹25L</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Gaming Categories -->
+    <section class="gaming-categories">
+        <div class="section-header">
+            <h2 class="section-title fade-up">FEATURED GAMES</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="categories-grid">
+            <div class="category-card fade-up">
+                <img src="https://images.unsplash.com/photo-1538481143235-405ba7209da0?w=500&h=500&fit=crop" alt="Valorant">
+                <div class="category-overlay">
+                    <h3>Valorant</h3>
+                    <p>Tactical Shooter</p>
+                    <button class="btn btn-secondary">Explore</button>
+                </div>
+            </div>
+            
+            <div class="category-card fade-up">
+                <img src="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=500&h=500&fit=crop" alt="CS2">
+                <div class="category-overlay">
+                    <h3>Counter-Strike 2</h3>
+                    <p>Competitive FPS</p>
+                    <button class="btn btn-secondary">Explore</button>
+                </div>
+            </div>
+            
+            <div class="category-card fade-up">
+                <img src="https://images.unsplash.com/photo-1542308503-80e2c6f6fc5a?w=500&h=500&fit=crop" alt="Fortnite">
+                <div class="category-overlay">
+                    <h3>Fortnite</h3>
+                    <p>Battle Royale</p>
+                    <button class="btn btn-secondary">Explore</button>
+                </div>
+            </div>
+            
+            <div class="category-card fade-up">
+                <img src="https://images.unsplash.com/photo-1638614052176-c961b0acd7a7?w=500&h=500&fit=crop" alt="League">
+                <div class="category-overlay">
+                    <h3>League of Legends</h3>
+                    <p>MOBA</p>
+                    <button class="btn btn-secondary">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="stats-container fade-in-up">
+            <div class="stat-item">
+                <div class="stat-number" data-target="50000">0</div>
+                <div class="stat-label">Players</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="1200">0</div>
+                <div class="stat-label">Tournaments</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="5000000">0</div>
+                <div class="stat-label">Prize Pool (₹)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="95">0</div>
+                <div class="stat-label">Countries</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="gaming-news">
+        <div class="section-header">
+            <h2 class="section-title fade-up">LATEST FROM THE ARENA</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="news-grid fade-in-up">
+            <article class="news-card">
+                <img src="https://images.unsplash.com/photo-1538481143235-405ba7209da0?w=500&h=300&fit=crop" alt="News">
+                <div class="news-content">
+                    <span class="news-category">TOURNAMENT</span>
+                    <h3>Valorant Champions Finals Breaks All Records</h3>
+                    <p>The esports world watches as teams compete for the ultimate prize...</p>
+                    <span class="news-date">📅 Aug 28, 2024</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <img src="https://images.unsplash.com/photo-1542308503-80e2c6f6fc5a?w=500&h=300&fit=crop" alt="News">
+                <div class="news-content">
+                    <span class="news-category">UPDATE</span>
+                    <h3>Fortnite OG Season Launch Brings Major Changes</h3>
+                    <p>New competitive formats and tournament structure announced...</p>
+                    <span class="news-date">📅 Aug 27, 2024</span>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <img src="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=500&h=300&fit=crop" alt="News">
+                <div class="news-content">
+                    <span class="news-category">ANNOUNCEMENT</span>
+                    <h3>MENACTERS Introduces Revolutionary Ranking System</h3>
+                    <p>Fair, transparent, and rewarding progression for all players...</p>
+                    <span class="news-date">📅 Aug 26, 2024</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community">
+        <div class="community-content fade-in-up">
+            <h2>YOUR SQUAD IS WAITING.</h2>
+            <p>Find teammates. Build your team. Enter tournaments. Climb the leaderboard.</p>
+            <button class="btn btn-primary glow-button">JOIN THE COMMUNITY</button>
+        </div>
+        <div class="community-particles"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MENACTERS</h3>
+                <p>Ultimate Gaming Tournament Arena</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#tournaments">Tournaments</a></li>
+                    <li><a href="#leaderboard">Leaderboard</a></li>
+                    <li><a href="#news">News</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MENACTERS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
